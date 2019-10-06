@@ -1,0 +1,47 @@
+Zelienople south=Pioneer 
+Kipton south=Greilickville 
+GrandMound east=Alamo north=Syosset 
+Greilickville west=MorroBay north=Kipton 
+LeadvilleNorth east=JAARS west=Hahira north=Taunton 
+Funkley north=Hahira 
+ConesusHamlet east=Sedan north=LeRaysville 
+Sedan west=ConesusHamlet north=Whitakers south=GranvilleSouth 
+ElkHorn south=Zena 
+Canandaigua east=Zena west=Saybrook north=Antelope south=ClearviewAcres 
+JAARS east=Abeytas west=LeadvilleNorth north=ClearviewAcres 
+Whitakers east=MapleHeights west=LeRaysville south=Sedan 
+LakeCassidy west=Eschbach 
+Eschbach east=LakeCassidy west=MapleHeights 
+Manhattan east=Saybrook west=Westmont north=Wildomar south=RockCity 
+Zena west=Canandaigua north=ElkHorn south=Protivin 
+Fairgarden east=Oostburg north=PaintedHills south=Herington 
+Tecumseh north=Edinburg 
+Abeytas west=JAARS north=Protivin 
+LeRaysville east=Whitakers south=ConesusHamlet 
+MapleHeights east=Eschbach west=Whitakers 
+Burnettsville north=GranvilleSouth 
+Herington north=Fairgarden south=AltoBonitoHeights 
+Gonvick south=MorroBay 
+MorroBay east=Greilickville west=Pioneer north=Gonvick 
+Saybrook east=Canandaigua west=Manhattan 
+GranvilleSouth west=SixShooterCanyon north=Sedan south=Burnettsville 
+PaintedHills south=Fairgarden 
+RockCity east=Taunton west=Edinburg north=Manhattan 
+Oostburg west=Fairgarden south=Manahawkin 
+Manahawkin north=Oostburg south=Fulford 
+Wildomar west=Kappa south=Manhattan 
+SixShooterCanyon east=GranvilleSouth 
+Westmont east=Manhattan north=Kappa 
+ClearviewAcres east=Protivin north=Canandaigua south=JAARS 
+Protivin west=ClearviewAcres north=Zena south=Abeytas 
+Syosset south=GrandMound 
+RanchoMirage south=Antelope 
+Antelope north=RanchoMirage south=Canandaigua 
+Fulford north=Manahawkin 
+Kappa east=Wildomar south=Westmont 
+Edinburg east=RockCity south=Tecumseh 
+AltoBonitoHeights north=Herington 
+Alamo east=Pioneer west=GrandMound 
+Pioneer east=MorroBay west=Alamo north=Zelienople 
+Taunton west=RockCity south=LeadvilleNorth 
+Hahira east=LeadvilleNorth south=Funkley 

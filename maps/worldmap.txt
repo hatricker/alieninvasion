@@ -1,0 +1,64 @@
+Zena east=GrandMound north=Manahawkin 
+
+Westmont east=Hahira west=Kipton south=Greilickville 
+
+LeadvilleNorth east=LeRaysville west=Manahawkin south=GrandMound 
+
+Kappa west=GrandMound south=Wildomar 
+
+Kipton east=Westmont west=Eschbach north=Gonvick south=Syosset 
+
+Wildomar east=Canandaigua west=Pioneer north=Kappa 
+
+Saybrook west=Edinburg north=Pioneer south=Antelope 
+
+Syosset east=Greilickville north=Kipton 
+
+LakeCassidy east=Sedan west=LeRaysville 
+
+Burnettsville west=Abeytas south=PaintedHills 
+
+GranvilleSouth west=AltoBonitoHeights 
+
+Manahawkin east=LeadvilleNorth south=Zena 
+
+Manhattan east=Gonvick south=Eschbach 
+
+Antelope west=MapleHeights north=Saybrook 
+
+Greilickville east=Protivin west=Syosset north=Westmont 
+
+GrandMound east=Kappa west=Zena north=LeadvilleNorth 
+
+Edinburg east=Saybrook south=MapleHeights 
+
+Eschbach east=Kipton north=Manhattan south=SixShooterCanyon 
+
+Hahira west=Westmont north=ConesusHamlet 
+
+Protivin west=Greilickville 
+
+Pioneer east=Wildomar south=Saybrook 
+
+Canandaigua west=Wildomar north=Abeytas south=Gonvick 
+
+PaintedHills east=Oostburg north=Burnettsville 
+
+ConesusHamlet north=Oostburg south=Hahira 
+
+MapleHeights east=Antelope north=Edinburg south=AltoBonitoHeights 
+
+Abeytas east=Burnettsville south=Canandaigua 
+
+Gonvick west=Manhattan north=Canandaigua south=Kipton 
+
+AltoBonitoHeights east=GranvilleSouth north=MapleHeights 
+
+SixShooterCanyon north=Eschbach 
+
+LeRaysville east=LakeCassidy west=LeadvilleNorth 
+
+Sedan west=LakeCassidy 
+
+Oostburg west=PaintedHills south=ConesusHamlet 
+
