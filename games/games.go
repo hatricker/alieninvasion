@@ -8,12 +8,16 @@ import (
 )
 
 //Game keeps game state
+//AlienLocations keeps a map with key as alien and value as the city where alien stays
+//CityMap holds the current cities, paths among them(neighbors), and alien(s) in each city
+//randGen holds a random number generator object
 type Game struct {
 	AlienLocations map[string]string
 	CityMap        map[string]*generators.CityNode
 	randGen        generators.NumGen
 }
 
+//spreadAliensOntoMap spreads the aliens randomly on the map
 func spreadAliensOntoMap(aliens []string,
 	cityMap map[string]*generators.CityNode,
 	gen generators.NumGen) map[string]string {
@@ -61,6 +65,9 @@ func (g *Game) StartGame(loop int) {
 }
 
 //GenMoves generates the moves for each aliens
+//The move for each alien is generated randomly
+//If the generated direction has no path to other node,
+//that alien will stay at the same city
 func (g *Game) GenMoves() map[string]int {
 	moves := make(map[string]int)
 	for alien := range g.AlienLocations {

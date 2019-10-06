@@ -17,14 +17,14 @@ func main() {
 	var (
 		numAliens   = flag.Int("na", 2, "Number of Aliens")
 		numMoves    = flag.Int("nm", 10000, "Number of Moves")
-		cityMatrixX = flag.Int("mx", 0, "City Map matrix x")
-		cityMatrixY = flag.Int("my", 0, "City Map matrix x")
-		mapFile     = flag.String("mapfile", "", "Map of the world")
+		cityMatrixX = flag.Int("mx", 0, "size of x-coordinate of map matrix")
+		cityMatrixY = flag.Int("my", 0, "size of y-coordinate of map matrix")
+		mapFile     = flag.String("mapfile", "", "Input map file")
 		outputFile  = flag.String("output", "", "output file to dump the map info")
 	)
 
 	flag.Usage = func() {
-		fmt.Fprintf(os.Stderr, "Usage: go run cmd/alieninvasion.go [-na <number of aliens> -mx <X> -my <Y> -mapfile <input map file> -output <output map file>]\n")
+		fmt.Fprintf(os.Stderr, "Usage: %s [-na <number of aliens> -mx <X> -my <Y> -mapfile <input map file> -output <output map file>]\n", os.Args[0])
 
 		flag.PrintDefaults()
 	}
