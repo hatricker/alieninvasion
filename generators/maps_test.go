@@ -196,6 +196,13 @@ func TestGenerateCityMap(t *testing.T) {
 		},
 		{
 			[][]int{
+				{0, 0, 0, 0},
+				{0, East | South, West, South},
+				{0, North, 0, North},
+			},
+		},
+		{
+			[][]int{
 				{0, 0, 0},
 				{0, East, West | South},
 				{0, South, North | South},

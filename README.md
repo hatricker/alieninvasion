@@ -46,7 +46,7 @@ Usage: ./bin/alieninvasion [-na <number of aliens> -mx <X> -my <Y> -mapfile <inp
 # The generated map is a 8x8 matrix. Each node on the matrix could have neighbor(s) in four directions
 ```
 
-- To run the game with a pre-generated map. Note, there are a few pre-generated maps under *./map* folder.
+- To run the game with a pre-generated map. Note, there are a few pre-generated maps under *./maps* folder.
 ```
 ./bin/alieninvasion -mapfile worldmap.txt -na 10 -nm 100 
 
@@ -60,9 +60,20 @@ Usage: ./bin/alieninvasion [-na <number of aliens> -mx <X> -my <Y> -mapfile <inp
 # There will be 10 aliens randomly scatted on a 7x6 automatically created map. The maximum possible moves are 100
 ```
 
+- Note, if you want to save the map at the end of the game, you can redirect output to a file.
+```
+./bin/alieninvasion -mx 7 -my 6 -na 10 -nm 100 > endmap.txt
+
+# Only map at the end is printed to Stdout. All other messages are sent to Stderr
+```
+
+
 # Run tests
 ```
 make test
 ```
 
-
+# Format the code
+```
+make nice
+```

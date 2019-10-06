@@ -33,7 +33,7 @@ func (fn *fakeZeroGen) GenerateNum(_ int) int {
 	return 0
 }
 
-func (fna fakeNumArrayGen) GenerateNums(num int) []int {
+func (fna *fakeNumArrayGen) GenerateNums(num int) []int {
 	result := make([]int, num)
 	for i := 0; i < num; i++ {
 		result[i] = i

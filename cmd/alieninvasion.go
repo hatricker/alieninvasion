@@ -5,6 +5,7 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
+	"io"
 	"log"
 	"os"
 	"strings"
@@ -102,8 +103,9 @@ func playGame(mapFile string, numAliens, numMoves, x, y int) error {
 		cityMap = generators.GenerateCityMapFromSteam(scanner, ' ')
 	}
 
+	//Initial map is printed to Stderr along with other logs
 	log.Println("Obtained city map...")
-	printCityMap(cityMap)
+	printCityMap(cityMap, os.Stderr)
 
 	aliens, err := generators.GenerateAlienNames(generators.RandNumArrGenerator, numAliens)
 	if err != nil {
@@ -116,14 +118,15 @@ func playGame(mapFile string, numAliens, numMoves, x, y int) error {
 	log.Println("Game starting...")
 	g.StartGame(numMoves)
 
-	log.Println("City map at the end of game...")
-	printCityMap(g.CityMap)
+	//Map at the end is printed to Stdout solely which could be redirected to a file
+	log.Println("Printing city map at the end of game...")
+	printCityMap(g.CityMap, os.Stdout)
 	return nil
 }
 
 //print city map to the stdout
-func printCityMap(cm map[string]*generators.CityNode) {
+func printCityMap(cm map[string]*generators.CityNode, w io.Writer) {
 	var b bytes.Buffer
 	generators.GenerateMapFile(cm, &b)
-	fmt.Printf("%s", b.String())
+	fmt.Fprintf(w, "%s", b.String())
 }
